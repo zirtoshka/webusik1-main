@@ -9,6 +9,7 @@ class Checker {
         this.rRadios = document.getElementsByName("radio");
         this.submit= document.getElementById("submit-button")
 
+
         this.rValue;
 
         this.disableVideoCheckbox = document.getElementById("disable-video");
