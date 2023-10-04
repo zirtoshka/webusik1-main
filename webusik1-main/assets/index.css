@@ -84,11 +84,29 @@ body {
     justify-content: center;
 }
 
+.check-button:hover{
+    background: rgba(61, 243, 213, 0.58);
+    color: #006e17;
+    transform: scale(1.2);
+    border-color: #006e17;
+}
+
+input:focus{
+    background: rgba(100, 248, 236, 0.33);
+
+}
+.disable-button:hover{
+    color: #006e17;
+    transform: scale(1.2);
+}
+
 input[type="radio"] {
     width: 20px;
     height: 15px;
     transform: scale(1.7);
 }
+
+
 
 .overlay {
     position: fixed;
@@ -102,6 +120,7 @@ input[type="radio"] {
     display: flex;
     justify-content: center;
 }
+
 
 .graph {
     display: flex;
