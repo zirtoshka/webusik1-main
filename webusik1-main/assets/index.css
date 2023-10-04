@@ -70,42 +70,54 @@ body {
 }
 
 .r-radio {
-    gap: 3%;
+    gap: 8%;
     font-size: 120%;
     display: flex;
-    justify-content: space-evenly;
+    justify-content: space-between;
 
 }
 
 .button {
+    margin-top: 5%;
     display: flex;
     flex-grow: 1;
     flex-shrink: 4;
     justify-content: center;
 }
 
-.check-button:hover{
+.x-select, .y-text, .check-button {
+    border-color: #89bfff;
+    border-radius: .5em;
+    background-color: rgba(150, 246, 233, 0.84);
+
+}
+
+
+
+.check-button:hover {
     background: rgba(61, 243, 213, 0.58);
     color: #006e17;
     transform: scale(1.2);
     border-color: #006e17;
 }
 
-input:focus{
+
+
+input:focus {
     background: rgba(100, 248, 236, 0.33);
 
 }
-.disable-button:hover{
+
+.disable-button:hover {
     color: #006e17;
     transform: scale(1.2);
 }
 
 input[type="radio"] {
-    width: 20px;
+    width: 15px;
     height: 15px;
     transform: scale(1.7);
 }
-
 
 
 .overlay {
@@ -117,17 +129,19 @@ input[type="radio"] {
 }
 
 .disable-button {
-    display: flex;
-    justify-content: center;
+    align-self: center;
+
 }
 
 
 .graph {
     display: flex;
     justify-content: center;
+    align-self: flex-start;
     flex-direction: column;
 }
-h1{
+
+h1 {
     text-align: center;
 }
 
@@ -140,6 +154,7 @@ tbody tr:hover {
 .result {
     display: flex;
     justify-content: center;
+    align-items: flex-start;
 
 }
 
@@ -217,6 +232,9 @@ tbody tr:hover {
     animation: fadein 0.5s, fadeout 0.5s 2.5s;
 }
 
+
+
+
 @keyframes fadein {
     from {
         opacity: 0;
@@ -235,5 +253,104 @@ tbody tr:hover {
     to {
         opacity: 0;
     }
+}
+
+
+
+
+
+@keyframes fade {
+    0%, 50% {
+        opacity: 0;
+        transform: scale(3);
+    }
+}
+
+
+.r-button {
+    animation: fade 0.7s;
+
+}
+.r-button label {
+    border-radius: 10px;
+    animation-duration: 1.6s;
+}
+
+
+
+/**** BLUE Radio button code ****/
+#r1 + label {
+    /*left: -20vw;*/
+    background: #35eaea;
+    padding: 6px;
+    animation-delay: .2s;
+}
+#r1:checked + label {
+    background: white;
+    border: 1vw solid;
+    border-color: #67ecb9;
+    box-shadow: inset rgba(134, 241, 159, 0.55) 0 0 .6vw 0, inset rgba(136, 243, 234, 0.84) 0 .6vw .8vw 0;
+    transition: all .2s;
+}
+
+
+#r2 + label {
+    /*left: -20vw;*/
+    background: #35eaea;
+    padding: 7px;
+    animation-delay: .2s;
+}
+#r2:checked + label {
+    background: white;
+    border: 1vw solid;
+    border-color: #67ecb9;
+    box-shadow: inset rgba(134, 241, 159, 0.55) 0 0 .6vw 0, inset rgba(136, 243, 234, 0.84) 0 .6vw .8vw 0;
+    transition: all .2s;
+}
+
+#r3 + label {
+    /*left: -20vw;*/
+    background: #35eaea;
+    padding: 7px;
+    animation-delay: .2s;
+}
+#r3:checked + label {
+    background: white;
+    border: 1vw solid;
+    border-color: #67ecb9;
+    box-shadow: inset rgba(134, 241, 159, 0.55) 0 0 .6vw 0, inset rgba(136, 243, 234, 0.84) 0 .6vw .8vw 0;
+    transition: all .2s;
+}
+
+#r4 + label {
+    /*left: -20vw;*/
+    background: #35eaea;
+    padding: 7px;
+    animation-delay: .2s;
+}
+#r4:checked + label {
+    background: white;
+    border: 1vw solid;
+    border-color: #67ecb9;
+    box-shadow: inset rgba(134, 241, 159, 0.55) 0 0 .6vw 0, inset rgba(136, 243, 234, 0.84) 0 .6vw .8vw 0;
+    transition: all .2s;
+}
+
+#r5 + label {
+    /*left: -20vw;*/
+    background: #35eaea;
+    padding: 7px;
+    animation-delay: .2s;
+}
+#r5:checked + label {
+    background: white;
+    border: 1vw solid;
+    border-color: #67ecb9;
+    box-shadow: inset rgba(134, 241, 159, 0.55) 0 0 .6vw 0, inset rgba(136, 243, 234, 0.84) 0 .6vw .8vw 0;
+    transition: all .2s;
+}
+
+[type="radio"] {
+    display: none;
 }
 
