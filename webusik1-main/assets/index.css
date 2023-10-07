@@ -93,14 +93,12 @@ body {
 }
 
 
-
 .check-button:hover {
     background: rgba(61, 243, 213, 0.58);
     color: #006e17;
     transform: scale(1.2);
     border-color: #006e17;
 }
-
 
 
 input:focus {
@@ -233,8 +231,6 @@ tbody tr:hover {
 }
 
 
-
-
 @keyframes fadein {
     from {
         opacity: 0;
@@ -256,9 +252,6 @@ tbody tr:hover {
 }
 
 
-
-
-
 @keyframes fade {
     0%, 50% {
         opacity: 0;
@@ -271,20 +264,19 @@ tbody tr:hover {
     animation: fade 0.7s;
 
 }
+
 .r-button label {
     border-radius: 10px;
     animation-duration: 1.6s;
 }
 
-
-
-/**** BLUE Radio button code ****/
 #r1 + label {
     /*left: -20vw;*/
     background: #35eaea;
-    padding: 6px;
+    padding: 7px;
     animation-delay: .2s;
 }
+
 #r1:checked + label {
     background: white;
     border: 1vw solid;
@@ -300,6 +292,7 @@ tbody tr:hover {
     padding: 7px;
     animation-delay: .2s;
 }
+
 #r2:checked + label {
     background: white;
     border: 1vw solid;
@@ -314,6 +307,7 @@ tbody tr:hover {
     padding: 7px;
     animation-delay: .2s;
 }
+
 #r3:checked + label {
     background: white;
     border: 1vw solid;
@@ -328,6 +322,7 @@ tbody tr:hover {
     padding: 7px;
     animation-delay: .2s;
 }
+
 #r4:checked + label {
     background: white;
     border: 1vw solid;
@@ -342,6 +337,7 @@ tbody tr:hover {
     padding: 7px;
     animation-delay: .2s;
 }
+
 #r5:checked + label {
     background: white;
     border: 1vw solid;
