@@ -1,1 +1,1 @@
-![Image alt] lab1.png
+![Image alt] (lab1.png)
